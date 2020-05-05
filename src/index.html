@@ -17,9 +17,8 @@
 
 <!-- To Do:
   *** Finish the jumbotron page
-  
   ** Create and add Favicon
-  ** The footer is hideous so redo it
+  * Maybe change the seagull image if you find a better one
 -->
 
 <!--- === Jumbotron === -->
@@ -148,11 +147,16 @@
 
 <!-- === Footer === -->
 <section class="footer">
-  <div class="letsmeet">
-    <div class="letsmeet__left">
-      <h2>Lets Meet</h2>
+  <div class="footer__left">
+    <div class="footer__getintouch">
+      <div class="footer--inline">
+        <h2>To find out more</h2>
+        <div class="line"></div>
+      </div>
+      <h1>Get in touch</h1>
+      <button>email us</button>
     </div>
-    <div class="letsmeet__right">
+    <div class="footer__wrapper">
       <div class="address">
         <p><span>Address</span></p>
         <p>5 Remfton Road</p>
@@ -168,24 +172,13 @@
         <i class="lab la-instagram"></i>
       </div>
     </div>
+    
   </div>
-  <div class="letstalk">
-    <div class="letstalk__left">
-      <h2>Lets Talk</h2>
-    </div>
-    <div class="letstalk__right">
-      <form>
-        <label for="name">Name</label>
-        <input type="field" name="name" id="name"><br>
-        <label for="email">Email</label>
-        <input type="field" name="email" id="email"><br>
-        <label for="message">Message</label>
-        <input type="field" name="message" id="message"><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
+  <div class="footer__right"></div>
 </section>
+<div class="footer__copyright">
+  <p>© 1972 Visit Tweethorpe Coastline. All rights reserverd</p>
+</div>
 
 <!-- === Scripts === -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js" integrity="sha256-nf7u3H2uLh7tvCASjLqQ5K2sDRmvvooLxoEvZt7ti2U=" crossorigin="anonymous"></script>

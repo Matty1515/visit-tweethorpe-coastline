@@ -515,16 +515,24 @@ body {
 }
 
 /* === Footer === */
+.footer h1 {
+  font-weight: 400;
+  font-family: 'Dorsa', sans-serif;
+  font-size: 200px;
+}
 .footer h2 {
   font-weight: 400;
   font-family: 'Dorsa', sans-serif;
-  font-size: 80px;
+  font-size: 60px;
+  width: 240px;
+  margin-right: 20px;
+  outline: 0px solid red;
 }
-.footer p, .footer label {
+.footer p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
 }
-.footer span, .footer input[type="field"], .footer input[type="submit"] {
+.footer span {
   font-family: 'Cormorant Garamond', serif;
   color: #03b9bd;
   font-size: 15px;
@@ -533,76 +541,79 @@ body {
   color: #03b9bd;
   cursor: pointer;
 }
-/*
-.footer {
-  background-color: #000000;
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.08476894175639005) 10%, rgba(0,0,0,0.6281863087031687) 25%, rgba(0,0,0,0.8634804263502276) 38%, rgba(0,0,0,0.9391106784510679) 50%, rgba(0,0,0,1) 60%), url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2303b9bd' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  min-height: 50vh;
-  width: 100%;
-  padding: 50px 10vw 50px 10vw;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-*/
 .footer {
   background-color: white;
   width: 100%;
-  padding: 10px 10vw 10px 10vw;
+  padding: 0px 10vw 10px 10vw;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  margin-top: -5vw;
 }
-.letsmeet > *, .letstalk > * {
-  margin-bottom: 10px;
-}
-.letsmeet, .letstalk {
-  width: 250px;
-  display: flex;
-}
-.footer input[type="field"] {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid black;
-  width: 100%;
-  margin-bottom: 20px;
-}
-.footer input[type="submit"] {
-  border: 1px solid #03b9bd;
-  background-color: transparent;
+.footer button {
+  background-color: black;
+  border: 1px solid black;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  padding: 5px 20px;
   text-transform: uppercase;
-  font-weight: 800;
-  padding: 7.5px 15px 7.5px 15px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #03b9bd;
-}
-.footer input[type="submit"]:hover {
-  cursor: pointer;
-  background-color: #03b9bd;
-  font-weight: 800;
   color: white;
 }
-@media screen and (max-width: 800px) {
-  .footer {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .letsmeet {
-    margin-bottom: 40px;
+.footer button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+}
+.footer--inline {
+  display: flex;
+  align-items: center;
+}
+.footer__right {
+  background-image: url("../img/flock-of-seagulls3.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__wrapper > * {
+  margin-right: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.footer__wrapper {
+  display: flex;
+}
+.footer__copyright {
+  border-top: 1px solid black;
+  margin: 0px 10vw 0px 10vw;
+}
+.footer__copyright p {
+  padding: 5px 0;
+}
+@media screen and (max-width: 1280px) {
+  .footer__right {
+    background-size: 100% auto;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   .footer {
-    padding: 0 20px;
-    background-image: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-  .letsmeet, .letstalk {
-    width: 100%;
+  .footer__right {
+    display: none;
+  }
+  .footer h2 {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footer h2 {
+    width: 320px;
+  }
+  .footer h1 {
+    font-size: 150px;
   }
 }
