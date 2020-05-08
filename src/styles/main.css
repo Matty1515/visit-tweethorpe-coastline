@@ -521,15 +521,18 @@ body {
 .footer h1 {
   font-weight: 400;
   font-family: 'Dorsa', sans-serif;
+  text-transform: uppercase;
   font-size: 200px;
 }
 .footer h2 {
   font-weight: 400;
   font-family: 'Dorsa', sans-serif;
   font-size: 60px;
-  width: 240px;
+  width: 260px;
   margin-right: 20px;
   outline: 0px solid red;
+  text-transform: uppercase;
+  color: #03b9bd;
 }
 .footer p {
   font-family: 'Cormorant Garamond', serif;
@@ -615,7 +618,7 @@ body {
     white-space: nowrap;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
   .footer--inline {
     display: none;
   }
@@ -625,6 +628,9 @@ body {
     margin-bottom: 50px;
   }
   .footer h1 {
-    font-size: 150px;
+    font-size: 120px;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 }
