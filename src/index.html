@@ -19,9 +19,12 @@
 
 <!-- To Do:
   *** Finish the jumbotron page
-  * The footer image and favicon are ok but could be better - change them if you have the time
-  * Link the social icons to their respective sites
+  *** Change the ugly footer image
+  ** Link the social icons to their respective sites
+  * The cormorant image gets a weird border when animating - fix it!
 -->
+
+<main>
 
 <!--- === Jumbotron === -->
 <section class="jumbotron">
@@ -53,7 +56,7 @@
   </div>
 </div>
 
-<!--- === Split === -->
+<!--- === Wildlife === -->
 <section class="split">
   <div class="backg background-white"></div>
   <div class="backg background-black"></div>
@@ -89,7 +92,7 @@
   </div>
 </section>
 
-<!--- === Bridges === -->
+<!--- === Beaches === -->
 <section class="bridges">
   <div class="background-image"></div>
   <div class="top-title">
@@ -114,7 +117,7 @@
   </div>
 </section>
 
-<!--- === Canals === -->
+<!--- === Trails === -->
 <section class="canals">
   <div class="background-image-two"></div>
   <div class="title-one">
@@ -168,10 +171,10 @@
       <p><span>Phone</span><br> 0793112923</p>
       <div class="social">
         <p><span>Social</span></p>
-        <i class="lab la-twitter"></i>
-        <i class="lab la-pinterest"></i>
-        <i class="lab la-facebook-f"></i>
-        <i class="lab la-instagram"></i>
+        <a href="https://twitter.com/explore" target="_blank"><i class="lab la-twitter"></i></a>
+        <a href="https://www.pinterest.co.uk/" target="_blank"><i class="lab la-pinterest"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="lab la-facebook-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="lab la-instagram"></i></a>
       </div>
     </div>
     
@@ -179,8 +182,10 @@
   <div class="footer__right"></div>
 </section>
 <div class="footer__copyright">
-  <p>© 1972 Visit Tweethorpe Coastline. All rights reserverd</p>
+  <p>© 1972 Visit Tweethorpe Coastline. All rights reserverd | <span id="ScrollUp"><i class="las la-long-arrow-alt-up"></i> To the top</span></p>
 </div>
+
+</main>
 
 <!-- === Scripts === -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js" integrity="sha256-nf7u3H2uLh7tvCASjLqQ5K2sDRmvvooLxoEvZt7ti2U=" crossorigin="anonymous"></script>

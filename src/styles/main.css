@@ -13,8 +13,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
+  width: 100%;
+}
+main {
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .line {
   height: 5px;
@@ -102,6 +112,7 @@ body {
   line-height: 0.8;
   text-transform: uppercase;
   margin-bottom: -10px;
+  position: relative;
 }
 .splash-right h2 {
   text-transform: uppercase;
@@ -122,9 +133,11 @@ body {
 }
 .titlytop .line {
   margin-left: 10px;
+  margin-right: 0px;
 }
 .titlybott .line {
   margin-right: 10px;
+  margin-left: 0px;
 }
 .splash-right button {
   border: 1px solid #03b9bd;
@@ -381,6 +394,9 @@ body {
 .line-container {
   grid-area: line;
 }
+.bridges .line {
+  margin-right: 0px;
+}
 .left-text {
   grid-area: lefttxt;
   text-align: right;
@@ -484,6 +500,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+.line-one, .line-three {
+  margin-left: 0px;
+}
+.line-two { 
+  margin-right: 0px;
 }
 .img-text {
   text-align: right;
@@ -600,6 +622,12 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   text-align: center;
+}
+.social a {
+  color: black;
+}
+#ScrollUp:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 1280px) {
   .footer__right {
